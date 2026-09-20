@@ -129,7 +129,7 @@ function mk(id){return echarts.init(document.getElementById(id));}
     tooltip:{trigger:'axis'},
     legend:{top:0},
     grid:{left:40,right:20,top:44,bottom:28},
-    xAxis:{type:'category',data:modes.map(m=>chip(m)),axisLabel:{fontSize:13}},
+    xAxis:{type:'category',data:modes,axisLabel:{fontSize:13}},
     yAxis:{type:'value',max:100,axisLabel:{formatter:'{value}%'}},
     series:series
   });
@@ -141,7 +141,7 @@ function mk(id){return echarts.init(document.getElementById(id));}
   const el = document.getElementById('ch-compare');
   if(!el) return;
   const modes = Object.keys(DATA.compare.by_mode||{});
-  const labels = modes.map(m=>chip(m)); labels.push(chip('cnn'));
+  const labels = modes.concat(['CNN (400 классов)']);
   const series = [['top1','Top-1'],['top3','Top-3'],['macro_f1','Macro-F1']].map(([k,label])=>({
     name:label, type:'bar',
     data:modes.map(m=>DATA.compare.by_mode[m][k]??null).concat([DATA.compare.cnn[k]??null]),
@@ -160,7 +160,7 @@ function mk(id){return echarts.init(document.getElementById(id));}
   const pbEl = document.getElementById('ch-compare-breed');
   if(pbEl && DATA.compare.per_breed){
     const breeds = Object.keys(DATA.compare.per_breed).sort((a,b)=>DATA.compare.per_breed[b].cnn - DATA.compare.per_breed[a].cnn);
-    mk(pbEl).setOption({
+    echarts.init(pbEl).setOption({
       tooltip:{trigger:'axis',axisPointer:{type:'shadow'}},
       legend:{top:0},
       grid:{left:170,right:40,top:34,bottom:20},
@@ -192,7 +192,7 @@ function mk(id){return echarts.init(document.getElementById(id));}
     color:['#4f6bed','#9fb1f7'],
     tooltip:{trigger:'axis'},legend:{top:0},
     grid:{left:40,right:20,top:44,bottom:28},
-    xAxis:{type:'category',data:modes.map(m=>chip(m)),axisLabel:{fontSize:13}},
+    xAxis:{type:'category',data:modes,axisLabel:{fontSize:13}},
     yAxis:{type:'value',max:100,axisLabel:{formatter:'{value}%'}},
     series:series
   });

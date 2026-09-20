@@ -1,0 +1,301 @@
+item_id,breed,source,image_path
+american_bulldog_oxford_00,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_00.jpg
+american_bulldog_oxford_01,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_01.jpg
+american_bulldog_oxford_02,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_02.jpg
+american_bulldog_oxford_03,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_03.jpg
+american_bulldog_oxford_04,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_04.jpg
+american_bulldog_oxford_05,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_05.jpg
+american_bulldog_oxford_06,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_06.jpg
+american_bulldog_oxford_07,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_07.jpg
+american_bulldog_oxford_08,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_08.jpg
+american_bulldog_oxford_09,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_09.jpg
+american_bulldog_oxford_10,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_10.jpg
+american_bulldog_oxford_11,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_11.jpg
+american_bulldog_oxford_12,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_12.jpg
+american_bulldog_oxford_13,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_13.jpg
+american_bulldog_oxford_14,American Bulldog,oxford,data/oxford/dog/american_bulldog/american_bulldog_14.jpg
+basset_hound_oxford_00,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_00.jpg
+basset_hound_oxford_01,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_01.jpg
+basset_hound_oxford_02,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_02.jpg
+basset_hound_oxford_03,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_03.jpg
+basset_hound_oxford_04,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_04.jpg
+basset_hound_oxford_05,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_05.jpg
+basset_hound_oxford_06,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_06.jpg
+basset_hound_oxford_07,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_07.jpg
+basset_hound_oxford_08,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_08.jpg
+basset_hound_oxford_09,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_09.jpg
+basset_hound_oxford_10,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_10.jpg
+basset_hound_oxford_11,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_11.jpg
+basset_hound_oxford_12,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_12.jpg
+basset_hound_oxford_13,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_13.jpg
+basset_hound_oxford_14,Basset Hound,oxford,data/oxford/dog/basset_hound/basset_hound_14.jpg
+beagle_oxford_00,Beagle,oxford,data/oxford/dog/beagle/beagle_00.jpg
+beagle_oxford_01,Beagle,oxford,data/oxford/dog/beagle/beagle_01.jpg
+beagle_oxford_02,Beagle,oxford,data/oxford/dog/beagle/beagle_02.jpg
+beagle_oxford_03,Beagle,oxford,data/oxford/dog/beagle/beagle_03.jpg
+beagle_oxford_04,Beagle,oxford,data/oxford/dog/beagle/beagle_04.jpg
+beagle_oxford_05,Beagle,oxford,data/oxford/dog/beagle/beagle_05.jpg
+beagle_oxford_06,Beagle,oxford,data/oxford/dog/beagle/beagle_06.jpg
+beagle_oxford_07,Beagle,oxford,data/oxford/dog/beagle/beagle_07.jpg
+beagle_oxford_08,Beagle,oxford,data/oxford/dog/beagle/beagle_08.jpg
+beagle_oxford_09,Beagle,oxford,data/oxford/dog/beagle/beagle_09.jpg
+beagle_oxford_10,Beagle,oxford,data/oxford/dog/beagle/beagle_10.jpg
+beagle_oxford_11,Beagle,oxford,data/oxford/dog/beagle/beagle_11.jpg
+beagle_oxford_12,Beagle,oxford,data/oxford/dog/beagle/beagle_12.jpg
+beagle_oxford_13,Beagle,oxford,data/oxford/dog/beagle/beagle_13.jpg
+beagle_oxford_14,Beagle,oxford,data/oxford/dog/beagle/beagle_14.jpg
+boxer_oxford_00,Boxer,oxford,data/oxford/dog/boxer/boxer_00.jpg
+boxer_oxford_01,Boxer,oxford,data/oxford/dog/boxer/boxer_01.jpg
+boxer_oxford_02,Boxer,oxford,data/oxford/dog/boxer/boxer_02.jpg
+boxer_oxford_03,Boxer,oxford,data/oxford/dog/boxer/boxer_03.jpg
+boxer_oxford_04,Boxer,oxford,data/oxford/dog/boxer/boxer_04.jpg
+boxer_oxford_05,Boxer,oxford,data/oxford/dog/boxer/boxer_05.jpg
+boxer_oxford_06,Boxer,oxford,data/oxford/dog/boxer/boxer_06.jpg
+boxer_oxford_07,Boxer,oxford,data/oxford/dog/boxer/boxer_07.jpg
+boxer_oxford_08,Boxer,oxford,data/oxford/dog/boxer/boxer_08.jpg
+boxer_oxford_09,Boxer,oxford,data/oxford/dog/boxer/boxer_09.jpg
+boxer_oxford_10,Boxer,oxford,data/oxford/dog/boxer/boxer_10.jpg
+boxer_oxford_11,Boxer,oxford,data/oxford/dog/boxer/boxer_11.jpg
+boxer_oxford_12,Boxer,oxford,data/oxford/dog/boxer/boxer_12.jpg
+boxer_oxford_13,Boxer,oxford,data/oxford/dog/boxer/boxer_13.jpg
+boxer_oxford_14,Boxer,oxford,data/oxford/dog/boxer/boxer_14.jpg
+chihuahua_oxford_00,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_00.jpg
+chihuahua_oxford_01,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_01.jpg
+chihuahua_oxford_02,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_02.jpg
+chihuahua_oxford_03,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_03.jpg
+chihuahua_oxford_04,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_04.jpg
+chihuahua_oxford_05,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_05.jpg
+chihuahua_oxford_06,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_06.jpg
+chihuahua_oxford_07,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_07.jpg
+chihuahua_oxford_08,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_08.jpg
+chihuahua_oxford_09,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_09.jpg
+chihuahua_oxford_10,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_10.jpg
+chihuahua_oxford_11,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_11.jpg
+chihuahua_oxford_12,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_12.jpg
+chihuahua_oxford_13,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_13.jpg
+chihuahua_oxford_14,Chihuahua,oxford,data/oxford/dog/chihuahua/chihuahua_14.jpg
+great_pyrenees_oxford_00,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_00.jpg
+great_pyrenees_oxford_01,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_01.jpg
+great_pyrenees_oxford_02,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_02.jpg
+great_pyrenees_oxford_03,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_03.jpg
+great_pyrenees_oxford_04,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_04.jpg
+great_pyrenees_oxford_05,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_05.jpg
+great_pyrenees_oxford_06,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_06.jpg
+great_pyrenees_oxford_07,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_07.jpg
+great_pyrenees_oxford_08,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_08.jpg
+great_pyrenees_oxford_09,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_09.jpg
+great_pyrenees_oxford_10,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_10.jpg
+great_pyrenees_oxford_11,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_11.jpg
+great_pyrenees_oxford_12,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_12.jpg
+great_pyrenees_oxford_13,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_13.jpg
+great_pyrenees_oxford_14,Great Pyrenees,oxford,data/oxford/dog/great_pyrenees/great_pyrenees_14.jpg
+havanese_oxford_00,Havanese,oxford,data/oxford/dog/havanese/havanese_00.jpg
+havanese_oxford_01,Havanese,oxford,data/oxford/dog/havanese/havanese_01.jpg
+havanese_oxford_02,Havanese,oxford,data/oxford/dog/havanese/havanese_02.jpg
+havanese_oxford_03,Havanese,oxford,data/oxford/dog/havanese/havanese_03.jpg
+havanese_oxford_04,Havanese,oxford,data/oxford/dog/havanese/havanese_04.jpg
+havanese_oxford_05,Havanese,oxford,data/oxford/dog/havanese/havanese_05.jpg
+havanese_oxford_06,Havanese,oxford,data/oxford/dog/havanese/havanese_06.jpg
+havanese_oxford_07,Havanese,oxford,data/oxford/dog/havanese/havanese_07.jpg
+havanese_oxford_08,Havanese,oxford,data/oxford/dog/havanese/havanese_08.jpg
+havanese_oxford_09,Havanese,oxford,data/oxford/dog/havanese/havanese_09.jpg
+havanese_oxford_10,Havanese,oxford,data/oxford/dog/havanese/havanese_10.jpg
+havanese_oxford_11,Havanese,oxford,data/oxford/dog/havanese/havanese_11.jpg
+havanese_oxford_12,Havanese,oxford,data/oxford/dog/havanese/havanese_12.jpg
+havanese_oxford_13,Havanese,oxford,data/oxford/dog/havanese/havanese_13.jpg
+havanese_oxford_14,Havanese,oxford,data/oxford/dog/havanese/havanese_14.jpg
+pomeranian_oxford_00,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_00.jpg
+pomeranian_oxford_01,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_01.jpg
+pomeranian_oxford_02,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_02.jpg
+pomeranian_oxford_03,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_03.jpg
+pomeranian_oxford_04,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_04.jpg
+pomeranian_oxford_05,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_05.jpg
+pomeranian_oxford_06,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_06.jpg
+pomeranian_oxford_07,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_07.jpg
+pomeranian_oxford_08,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_08.jpg
+pomeranian_oxford_09,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_09.jpg
+pomeranian_oxford_10,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_10.jpg
+pomeranian_oxford_11,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_11.jpg
+pomeranian_oxford_12,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_12.jpg
+pomeranian_oxford_13,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_13.jpg
+pomeranian_oxford_14,Pomeranian,oxford,data/oxford/dog/pomeranian/pomeranian_14.jpg
+pug_oxford_00,Pug,oxford,data/oxford/dog/pug/pug_00.jpg
+pug_oxford_01,Pug,oxford,data/oxford/dog/pug/pug_01.jpg
+pug_oxford_02,Pug,oxford,data/oxford/dog/pug/pug_02.jpg
+pug_oxford_03,Pug,oxford,data/oxford/dog/pug/pug_03.jpg
+pug_oxford_04,Pug,oxford,data/oxford/dog/pug/pug_04.jpg
+pug_oxford_05,Pug,oxford,data/oxford/dog/pug/pug_05.jpg
+pug_oxford_06,Pug,oxford,data/oxford/dog/pug/pug_06.jpg
+pug_oxford_07,Pug,oxford,data/oxford/dog/pug/pug_07.jpg
+pug_oxford_08,Pug,oxford,data/oxford/dog/pug/pug_08.jpg
+pug_oxford_09,Pug,oxford,data/oxford/dog/pug/pug_09.jpg
+pug_oxford_10,Pug,oxford,data/oxford/dog/pug/pug_10.jpg
+pug_oxford_11,Pug,oxford,data/oxford/dog/pug/pug_11.jpg
+pug_oxford_12,Pug,oxford,data/oxford/dog/pug/pug_12.jpg
+pug_oxford_13,Pug,oxford,data/oxford/dog/pug/pug_13.jpg
+pug_oxford_14,Pug,oxford,data/oxford/dog/pug/pug_14.jpg
+saint_bernard_oxford_00,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_00.jpg
+saint_bernard_oxford_01,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_01.jpg
+saint_bernard_oxford_02,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_02.jpg
+saint_bernard_oxford_03,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_03.jpg
+saint_bernard_oxford_04,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_04.jpg
+saint_bernard_oxford_05,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_05.jpg
+saint_bernard_oxford_06,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_06.jpg
+saint_bernard_oxford_07,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_07.jpg
+saint_bernard_oxford_08,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_08.jpg
+saint_bernard_oxford_09,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_09.jpg
+saint_bernard_oxford_10,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_10.jpg
+saint_bernard_oxford_11,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_11.jpg
+saint_bernard_oxford_12,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_12.jpg
+saint_bernard_oxford_13,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_13.jpg
+saint_bernard_oxford_14,Saint Bernard,oxford,data/oxford/dog/saint_bernard/saint_bernard_14.jpg
+samoyed_oxford_00,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_00.jpg
+samoyed_oxford_01,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_01.jpg
+samoyed_oxford_02,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_02.jpg
+samoyed_oxford_03,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_03.jpg
+samoyed_oxford_04,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_04.jpg
+samoyed_oxford_05,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_05.jpg
+samoyed_oxford_06,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_06.jpg
+samoyed_oxford_07,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_07.jpg
+samoyed_oxford_08,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_08.jpg
+samoyed_oxford_09,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_09.jpg
+samoyed_oxford_10,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_10.jpg
+samoyed_oxford_11,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_11.jpg
+samoyed_oxford_12,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_12.jpg
+samoyed_oxford_13,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_13.jpg
+samoyed_oxford_14,Samoyed,oxford,data/oxford/dog/samoyed/samoyed_14.jpg
+shiba_inu_oxford_00,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_00.jpg
+shiba_inu_oxford_01,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_01.jpg
+shiba_inu_oxford_02,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_02.jpg
+shiba_inu_oxford_03,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_03.jpg
+shiba_inu_oxford_04,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_04.jpg
+shiba_inu_oxford_05,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_05.jpg
+shiba_inu_oxford_06,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_06.jpg
+shiba_inu_oxford_07,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_07.jpg
+shiba_inu_oxford_08,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_08.jpg
+shiba_inu_oxford_09,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_09.jpg
+shiba_inu_oxford_10,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_10.jpg
+shiba_inu_oxford_11,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_11.jpg
+shiba_inu_oxford_12,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_12.jpg
+shiba_inu_oxford_13,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_13.jpg
+shiba_inu_oxford_14,Shiba Inu,oxford,data/oxford/dog/shiba_inu/shiba_inu_14.jpg
+akita_web_00,Akita,web,data/web/dog/akita/akita_00.jpg
+akita_web_01,Akita,web,data/web/dog/akita/akita_01.jpg
+akita_web_02,Akita,web,data/web/dog/akita/akita_02.jpg
+akita_web_03,Akita,web,data/web/dog/akita/akita_03.jpg
+akita_web_04,Akita,web,data/web/dog/akita/akita_04.jpg
+akita_web_05,Akita,web,data/web/dog/akita/akita_05.jpg
+akita_web_06,Akita,web,data/web/dog/akita/akita_06.jpg
+akita_web_07,Akita,web,data/web/dog/akita/akita_07.jpg
+akita_web_08,Akita,web,data/web/dog/akita/akita_08.jpg
+akita_web_09,Akita,web,data/web/dog/akita/akita_09.jpg
+akita_web_10,Akita,web,data/web/dog/akita/akita_10.jpg
+akita_web_11,Akita,web,data/web/dog/akita/akita_11.jpg
+akita_web_12,Akita,web,data/web/dog/akita/akita_12.jpg
+akita_web_13,Akita,web,data/web/dog/akita/akita_13.jpg
+akita_web_14,Akita,web,data/web/dog/akita/akita_14.jpg
+border_collie_web_00,Border Collie,web,data/web/dog/border_collie/border_collie_00.jpg
+border_collie_web_01,Border Collie,web,data/web/dog/border_collie/border_collie_01.jpg
+border_collie_web_02,Border Collie,web,data/web/dog/border_collie/border_collie_02.jpg
+border_collie_web_03,Border Collie,web,data/web/dog/border_collie/border_collie_03.jpg
+border_collie_web_04,Border Collie,web,data/web/dog/border_collie/border_collie_04.jpg
+border_collie_web_05,Border Collie,web,data/web/dog/border_collie/border_collie_05.jpg
+border_collie_web_06,Border Collie,web,data/web/dog/border_collie/border_collie_06.jpg
+border_collie_web_07,Border Collie,web,data/web/dog/border_collie/border_collie_07.jpg
+border_collie_web_08,Border Collie,web,data/web/dog/border_collie/border_collie_08.jpg
+border_collie_web_09,Border Collie,web,data/web/dog/border_collie/border_collie_09.jpg
+border_collie_web_10,Border Collie,web,data/web/dog/border_collie/border_collie_10.jpg
+border_collie_web_11,Border Collie,web,data/web/dog/border_collie/border_collie_11.jpg
+border_collie_web_12,Border Collie,web,data/web/dog/border_collie/border_collie_12.jpg
+border_collie_web_13,Border Collie,web,data/web/dog/border_collie/border_collie_13.jpg
+border_collie_web_14,Border Collie,web,data/web/dog/border_collie/border_collie_14.jpg
+dachshund_web_00,Dachshund,web,data/web/dog/dachshund/dachshund_00.jpg
+dachshund_web_01,Dachshund,web,data/web/dog/dachshund/dachshund_01.jpg
+dachshund_web_02,Dachshund,web,data/web/dog/dachshund/dachshund_02.jpg
+dachshund_web_03,Dachshund,web,data/web/dog/dachshund/dachshund_03.jpg
+dachshund_web_04,Dachshund,web,data/web/dog/dachshund/dachshund_04.jpg
+dachshund_web_05,Dachshund,web,data/web/dog/dachshund/dachshund_05.jpg
+dachshund_web_06,Dachshund,web,data/web/dog/dachshund/dachshund_06.jpg
+dachshund_web_07,Dachshund,web,data/web/dog/dachshund/dachshund_07.jpg
+dachshund_web_08,Dachshund,web,data/web/dog/dachshund/dachshund_08.jpg
+dachshund_web_09,Dachshund,web,data/web/dog/dachshund/dachshund_09.jpg
+dachshund_web_10,Dachshund,web,data/web/dog/dachshund/dachshund_10.jpg
+dachshund_web_11,Dachshund,web,data/web/dog/dachshund/dachshund_11.jpg
+dachshund_web_12,Dachshund,web,data/web/dog/dachshund/dachshund_12.jpg
+dachshund_web_13,Dachshund,web,data/web/dog/dachshund/dachshund_13.jpg
+dachshund_web_14,Dachshund,web,data/web/dog/dachshund/dachshund_14.jpg
+french_bulldog_web_00,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_00.jpg
+french_bulldog_web_01,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_01.jpg
+french_bulldog_web_02,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_02.jpg
+french_bulldog_web_03,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_03.jpg
+french_bulldog_web_04,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_04.jpg
+french_bulldog_web_05,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_05.jpg
+french_bulldog_web_06,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_06.jpg
+french_bulldog_web_07,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_07.jpg
+french_bulldog_web_08,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_08.jpg
+french_bulldog_web_09,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_09.jpg
+french_bulldog_web_10,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_10.jpg
+french_bulldog_web_11,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_11.jpg
+french_bulldog_web_12,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_12.jpg
+french_bulldog_web_13,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_13.jpg
+french_bulldog_web_14,French Bulldog,web,data/web/dog/french_bulldog/french_bulldog_14.jpg
+golden_retriever_web_00,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_00.jpg
+golden_retriever_web_01,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_01.jpg
+golden_retriever_web_02,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_02.jpg
+golden_retriever_web_03,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_03.jpg
+golden_retriever_web_04,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_04.jpg
+golden_retriever_web_05,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_05.jpg
+golden_retriever_web_06,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_06.jpg
+golden_retriever_web_07,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_07.jpg
+golden_retriever_web_08,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_08.jpg
+golden_retriever_web_09,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_09.jpg
+golden_retriever_web_10,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_10.jpg
+golden_retriever_web_11,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_11.jpg
+golden_retriever_web_12,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_12.jpg
+golden_retriever_web_13,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_13.jpg
+golden_retriever_web_14,Golden Retriever,web,data/web/dog/golden_retriever/golden_retriever_14.jpg
+labrador_retriever_web_00,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_00.jpg
+labrador_retriever_web_01,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_01.jpg
+labrador_retriever_web_02,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_02.jpg
+labrador_retriever_web_03,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_03.jpg
+labrador_retriever_web_04,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_04.jpg
+labrador_retriever_web_05,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_05.jpg
+labrador_retriever_web_06,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_06.jpg
+labrador_retriever_web_07,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_07.jpg
+labrador_retriever_web_08,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_08.jpg
+labrador_retriever_web_09,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_09.jpg
+labrador_retriever_web_10,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_10.jpg
+labrador_retriever_web_11,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_11.jpg
+labrador_retriever_web_12,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_12.jpg
+labrador_retriever_web_13,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_13.jpg
+labrador_retriever_web_14,Labrador Retriever,web,data/web/dog/labrador_retriever/labrador_retriever_14.jpg
+pembroke_welsh_corgi_web_00,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_00.jpg
+pembroke_welsh_corgi_web_01,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_01.jpg
+pembroke_welsh_corgi_web_02,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_02.jpg
+pembroke_welsh_corgi_web_03,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_03.jpg
+pembroke_welsh_corgi_web_04,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_04.jpg
+pembroke_welsh_corgi_web_05,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_05.jpg
+pembroke_welsh_corgi_web_06,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_06.jpg
+pembroke_welsh_corgi_web_07,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_07.jpg
+pembroke_welsh_corgi_web_08,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_08.jpg
+pembroke_welsh_corgi_web_09,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_09.jpg
+pembroke_welsh_corgi_web_10,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_10.jpg
+pembroke_welsh_corgi_web_11,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_11.jpg
+pembroke_welsh_corgi_web_12,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_12.jpg
+pembroke_welsh_corgi_web_13,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_13.jpg
+pembroke_welsh_corgi_web_14,Pembroke Welsh Corgi,web,data/web/dog/pembroke_welsh_corgi/pembroke_welsh_corgi_14.jpg
+siberian_husky_web_00,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_00.jpg
+siberian_husky_web_01,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_01.jpg
+siberian_husky_web_02,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_02.jpg
+siberian_husky_web_03,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_03.jpg
+siberian_husky_web_04,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_04.jpg
+siberian_husky_web_05,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_05.jpg
+siberian_husky_web_06,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_06.jpg
+siberian_husky_web_07,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_07.jpg
+siberian_husky_web_08,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_08.jpg
+siberian_husky_web_09,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_09.jpg
+siberian_husky_web_10,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_10.jpg
+siberian_husky_web_11,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_11.jpg
+siberian_husky_web_12,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_12.jpg
+siberian_husky_web_13,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_13.jpg
+siberian_husky_web_14,Siberian Husky,web,data/web/dog/siberian_husky/siberian_husky_14.jpg

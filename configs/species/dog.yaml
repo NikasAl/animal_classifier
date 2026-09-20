@@ -152,7 +152,7 @@ breeds:
 
   - name: "Pembroke Welsh Corgi"
     aliases_ru: ["вельш-корги пемброк", "корги пемброк", "пемброк", "вельш корги пемброк"]
-    aliases_en: ["pembroke welsh corgi", "pembroke corgi", "welsh corgi pembroke", "pembroke"]
+    aliases_en: ["pembroke welsh corgi", "pembroke corgi", "welsh corgi pembroke", "pembroke", "welsh corgi", "corgi"]
     source: web
     search_queries:
       - "Pembroke Welsh Corgi dog breed photo"

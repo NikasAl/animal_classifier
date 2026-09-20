@@ -22,11 +22,13 @@ report:
   out_dir: "reports"
 
 # Сравнительный CNN-сервис (владельца приложения-распознавателя пород собак)
+# Протокол восстановлен из APK ru.electronikas.dogsexpert (scripts/dex_fields.py):
+# POST {base_url}{endpoint} с {"imageJpg": "<base64 JPEG>"} ->
+# {"breedList": [{"nameID": "...", "value": 31}, ...], "fileHash": "..."}
 cnn:
   enabled: true
   base_url: "https://kreagenium.ru/client/dogs/"
-  # endpoint (UrlPoint) и формат запроса определяются скриптом scripts/probe_cnn.py
-  endpoint: "classify"
-  request_field: "image"      # имя поля JSON с base64 изображения
+  endpoint: "jsondogfindinjpeg"
+  request_field: "imageJpg"
   timeout: 60
   results_path: "results/results_dog_cnn.jsonl"

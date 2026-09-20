@@ -108,8 +108,8 @@ def parse_breed_json(text: str) -> list[dict]:
             continue
         sample = lst[0]
         keys = {k.lower(): k for k in sample.keys()}
-        breed_key = next((keys[k] for k in ["breed", "name", "label", "class", "classname", " breed".strip(), "dog", "title"] if k in keys), None)
-        prob_key = next((keys[k] for k in ["probability", "prob", "confidence", "score", "value", "percent"] if k in keys), None)
+        breed_key = next((keys[k] for k in ["breed", "name", "nameid", "label", "class", "classname", "dog", "title"] if k in keys), None)
+        prob_key = next((keys[k] for k in ["value", "probability", "prob", "confidence", "score", "percent"] if k in keys), None)
         if breed_key is None:
             continue
         out = []
@@ -133,4 +133,6 @@ def parse_breed_json(text: str) -> list[dict]:
             best = out
         if len(best) >= 3:
             break
+    # спец-классы сервиса (не порода)
+    best = [g for g in best if g["breed"].strip().lower() not in ("no any dog", "not a dog")]
     return best

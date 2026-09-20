@@ -155,22 +155,31 @@ def _load_cnn_records(path: str) -> list[dict]:
     return recs
 
 
-def _compare_data(cnn_records: list[dict], metrics: dict, breeds: list[str]) -> dict:
+def _compare_data(cnn_records: list[dict], metrics: dict, breeds: list[str],
+                  normalizer: BreedNormalizer | None = None) -> dict:
     """Строит сравнение CNN vs LLM по общим item_id.
 
     CNN-запись: {item_id, mode:'cnn', breed, source, guesses:[{breed,confidence}],
                  latency_s, error}
+    Ответы CNN (нижний регистр, англ.) нормализуются к каноническим породам.
     """
     cnn_by_id = {r["item_id"]: r for r in cnn_records if not r.get("error")}
 
     def enrich_cnn(r: dict) -> dict:
-        g = [{"breed": x.get("breed"), "confidence": x.get("confidence")}
-             for x in (r.get("guesses") or []) if x.get("breed")]
+        g = []
+        seen = set()
+        for x in (r.get("guesses") or []):
+            nm = x.get("breed")
+            nm = normalizer.normalize(nm) if (normalizer and nm) else nm
+            if nm and nm not in seen:
+                g.append({"breed": nm, "confidence": x.get("confidence")})
+                seen.add(nm)
         top3 = [x["breed"] for x in g[:3]]
         return {
             "top1_correct": bool(top3) and top3[0] == r["breed"],
             "top3_correct": r["breed"] in top3,
             "recognized": bool(top3),
+            "norm_guesses": g,
             "latency_s": r.get("latency_s"),
         }
 
@@ -196,7 +205,7 @@ def _compare_data(cnn_records: list[dict], metrics: dict, breeds: list[str]) -> 
                 continue
             tp = sum(1 for r in brs if r["top1_correct"])
             fp = sum(1 for r in cnn_enriched if not r["top1_correct"] and
-                     (r.get("guesses") or [{}])[0].get("breed") == b)
+                     ((r.get("norm_guesses") or [{}])[0].get("breed")) == b)
             fn = len(brs) - tp
             prec = tp / (tp + fp) if tp + fp else None
             rec_ = tp / len(brs) if brs else None
@@ -297,7 +306,7 @@ def build_report(results_path: str, species_cfg: dict, model: str,
         try:
             cnn_records = _load_cnn_records(cnn_results_path)
             breeds = [b["name"] for b in species_cfg["breeds"]]
-            compare = _compare_data(cnn_records, metrics, breeds)
+            compare = _compare_data(cnn_records, metrics, breeds, normalizer)
         except Exception as e:  # noqa: BLE001
             print(f"[report] compare failed: {e}")
             compare = None
