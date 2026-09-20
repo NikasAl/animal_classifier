@@ -1,0 +1,167 @@
+# Кошки: 20 пород (12 из Oxford-IIIT Pet + 8 web-only).
+# Пилотные результаты (восстановлены из логов, окружение сбрасывалось):
+# closed top-1 62%, open top-1 43%, oxford vs web gap 15.8 п.п.
+species: cat
+species_rus: "кошка"
+is_pet_field: "is_cat"
+
+unrecognized_markers:
+  - "беспородная"
+  - "домашняя кошка"
+  - "дворовая"
+  - "метис"
+  - "помесь"
+  - "не удалось определить"
+  - "not a cat"
+  - "не кошка"
+  - "mixed breed"
+  - "domestic shorthair"
+  - "domestic longhair"
+  - "no cat"
+
+breeds:
+  # ---------- Oxford (12) ----------
+  - name: "Abyssinian"
+    aliases_ru: ["абиссинская", "абиссинская кошка", "абиссинец"]
+    aliases_en: ["abyssinian", "aby"]
+    source: oxford
+    oxford_folder: "abyssinian"
+
+  - name: "Bengal"
+    aliases_ru: ["бенгальская", "бенгальская кошка", "бенгал"]
+    aliases_en: ["bengal", "bengal cat"]
+    source: oxford
+    oxford_folder: "bengal"
+
+  - name: "Birman"
+    aliases_ru: ["бирманская", "бирма", "священная бирма"]
+    aliases_en: ["birman", "sacred birman", "birma cat"]
+    source: oxford
+    oxford_folder: "birman"
+
+  - name: "Bombay"
+    aliases_ru: ["бомбейская", "бомбей"]
+    aliases_en: ["bombay", "bombay cat"]
+    source: oxford
+    oxford_folder: "bombay"
+
+  - name: "British Shorthair"
+    aliases_ru: ["британская короткошерстная", "британская короткошёрстная", "британец", "британская"]
+    aliases_en: ["british shorthair", "british blue"]
+    source: oxford
+    oxford_folder: "british_shorthair"
+
+  - name: "Egyptian Mau"
+    aliases_ru: ["египетский мау", "мау"]
+    aliases_en: ["egyptian mau", "mau"]
+    source: oxford
+    oxford_folder: "egyptian_mau"
+
+  - name: "Maine Coon"
+    aliases_ru: ["мейн-кун", "мейн кун", "мекун"]
+    aliases_en: ["maine coon", "coon cat"]
+    source: oxford
+    oxford_folder: "maine_coon"
+
+  - name: "Persian"
+    aliases_ru: ["персидская", "перс", "персидская кошка"]
+    aliases_en: ["persian", "persian cat", "persian longhair"]
+    source: oxford
+    oxford_folder: "persian"
+
+  - name: "Ragdoll"
+    aliases_ru: ["регдолл", "рэгдолл"]
+    aliases_en: ["ragdoll"]
+    source: oxford
+    oxford_folder: "ragdoll"
+
+  - name: "Russian Blue"
+    aliases_ru: ["русская голубая", "русская голубая кошка"]
+    aliases_en: ["russian blue", "archangel blue"]
+    source: oxford
+    oxford_folder: "russian_blue"
+
+  - name: "Siamese"
+    aliases_ru: ["сиамская", "сиамская кошка", "сиам"]
+    aliases_en: ["siamese", "thai cat"]
+    source: oxford
+    oxford_folder: "siamese"
+
+  - name: "Sphynx"
+    aliases_ru: ["сфинкс", "канадский сфинкс", "спинкс"]
+    aliases_en: ["sphynx", "canadian sphynx"]
+    source: oxford
+    oxford_folder: "sphynx"
+
+  # ---------- Web (8) ----------
+  - name: "Scottish Fold"
+    aliases_ru: ["шотландская вислоухая", "скоттиш фолд", "шотландский фолд"]
+    aliases_en: ["scottish fold"]
+    source: web
+    search_queries:
+      - "Scottish Fold cat breed photo"
+      - "Scottish Fold cat portrait"
+      - "Scottish Fold kitten photo"
+
+  - name: "Norwegian Forest Cat"
+    aliases_ru: ["норвежская лесная", "норвежская лесная кошка", "норвег"]
+    aliases_en: ["norwegian forest cat", "wegie", "norsk skogkatt"]
+    source: web
+    search_queries:
+      - "Norwegian Forest Cat breed photo"
+      - "Norwegian Forest Cat portrait"
+      - "Norwegian Forest Cat standing"
+
+  - name: "Munchkin"
+    aliases_ru: ["манчкин", "манчкинская кошка"]
+    aliases_en: ["munchkin", "munchkin cat"]
+    source: web
+    search_queries:
+      - "Munchkin cat breed photo"
+      - "Munchkin cat short legs portrait"
+      - "Munchkin kitten photo"
+
+  - name: "Devon Rex"
+    aliases_ru: ["девон-рекс", "девон рекс", "девон"]
+    aliases_en: ["devon rex", "devon"]
+    source: web
+    search_queries:
+      - "Devon Rex cat breed photo"
+      - "Devon Rex cat portrait"
+      - "Devon Rex curly hair cat"
+
+  - name: "Cornish Rex"
+    aliases_ru: ["корниш-рекс", "корниш рекс", "корниш"]
+    aliases_en: ["cornish rex", "cornish"]
+    source: web
+    search_queries:
+      - "Cornish Rex cat breed photo"
+      - "Cornish Rex cat portrait"
+      - "Cornish Rex curly coat cat"
+
+  - name: "Burmese"
+    aliases_ru: ["бурманская", "бурма"]
+    aliases_en: ["burmese", "burmese cat"]
+    source: web
+    search_queries:
+      - "Burmese cat breed photo"
+      - "Burmese cat portrait"
+      - "Burmese cat brown sable"
+
+  - name: "Turkish Angora"
+    aliases_ru: ["турецкая ангора", "ангорская кошка", "ангора"]
+    aliases_en: ["turkish angora", "angora cat"]
+    source: web
+    search_queries:
+      - "Turkish Angora cat breed photo"
+      - "Turkish Angora white cat portrait"
+      - "Turkish Angora long hair cat"
+
+  - name: "Exotic Shorthair"
+    aliases_ru: ["экзотическая короткошерстная", "экзот", "экзотическая кошка"]
+    aliases_en: ["exotic shorthair", "exotic"]
+    source: web
+    search_queries:
+      - "Exotic Shorthair cat breed photo"
+      - "Exotic Shorthair cat portrait"
+      - "Exotic Shorthair flat face cat"

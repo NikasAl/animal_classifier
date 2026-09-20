@@ -1,0 +1,169 @@
+# Собаки: 20 пород (12 из Oxford-IIIT Pet + 8 web-only с известными "парами-путаницами").
+# source: oxford — фото из датасета (модель могла видеть его при обучении);
+# source: web — фото собраны из веб-поиска (свежие, вне типичных обучающих наборов).
+species: dog
+species_rus: "собака"
+is_pet_field: "is_dog"
+
+unrecognized_markers:
+  - "беспородная"
+  - "дворняга"
+  - "метис"
+  - "помесь"
+  - "смешанная порода"
+  - "не удалось определить"
+  - "not a dog"
+  - "не собака"
+  - "mixed breed"
+  - "mongrel"
+  - "mutt"
+  - "no dog"
+
+breeds:
+  # ---------- Oxford (12) ----------
+  - name: "American Bulldog"
+    aliases_ru: ["американский бульдог"]
+    aliases_en: ["american bulldog"]
+    source: oxford
+    oxford_folder: "american_bulldog"
+
+  - name: "Basset Hound"
+    aliases_ru: ["бассет-хаунд", "бассет хаунд", "бассет"]
+    aliases_en: ["basset hound", "basset"]
+    source: oxford
+    oxford_folder: "basset_hound"
+
+  - name: "Beagle"
+    aliases_ru: ["бигль"]
+    aliases_en: ["beagle", "english beagle"]
+    source: oxford
+    oxford_folder: "beagle"
+
+  - name: "Boxer"
+    aliases_ru: ["боксер", "боксёр", "немецкий боксер"]
+    aliases_en: ["boxer", "german boxer"]
+    source: oxford
+    oxford_folder: "boxer"
+
+  - name: "Chihuahua"
+    aliases_ru: ["чихуахуа", "чихуа-хуа"]
+    aliases_en: ["chihuahua"]
+    source: oxford
+    oxford_folder: "chihuahua"
+
+  - name: "Great Pyrenees"
+    aliases_ru: ["пиренейский горный дог", "большая пиренейская собака", "пиренейская горная собака"]
+    aliases_en: ["great pyrenees", "pyrenean mountain dog"]
+    source: oxford
+    oxford_folder: "great_pyrenees"
+
+  - name: "Havanese"
+    aliases_ru: ["гаванский бишон", "хаванез", "гаванезе"]
+    aliases_en: ["havanese", "bichon havanais"]
+    source: oxford
+    oxford_folder: "havanese"
+
+  - name: "Pomeranian"
+    aliases_ru: ["померанский шпиц", "помаранчевый шпиц", "померанец"]
+    aliases_en: ["pomeranian", "pom", "zwergspitz"]
+    source: oxford
+    oxford_folder: "pomeranian"
+
+  - name: "Pug"
+    aliases_ru: ["мопс"]
+    aliases_en: ["pug", "carlino", "mops"]
+    source: oxford
+    oxford_folder: "pug"
+
+  - name: "Saint Bernard"
+    aliases_ru: ["сенбернар", "санкт-бернард", "сент-бернард"]
+    aliases_en: ["saint bernard", "st bernard", "st. bernard"]
+    source: oxford
+    oxford_folder: "saint_bernard"
+
+  - name: "Samoyed"
+    aliases_ru: ["самоед", "самоедская собака", "самоедская лайка"]
+    aliases_en: ["samoyed", "bjelkier"]
+    source: oxford
+    oxford_folder: "samoyed"
+
+  - name: "Shiba Inu"
+    aliases_ru: ["сиба-ину", "шиба-ину", "сиба ину", "шиба"]
+    aliases_en: ["shiba inu", "shiba", "japanese shiba inu"]
+    source: oxford
+    oxford_folder: "shiba_inu"
+
+  # ---------- Web (8): популярные породы + сознательные "пары-путаницы" ----------
+  # Akita <-> Shiba Inu (oxford), French Bulldog <-> Pug (oxford),
+  # Husky <-> Samoyed/Great Pyrenees (oxford), Labrador <-> Golden Retriever (оба web)
+  - name: "Akita"
+    aliases_ru: ["акита-ину", "акита", "японская акита", "акита ину"]
+    aliases_en: ["akita", "akita inu", "japanese akita", "great japanese dog"]
+    source: web
+    search_queries:
+      - "Akita Inu dog breed photo"
+      - "Japanese Akita dog portrait photo"
+      - "Akita dog standing full body"
+
+  - name: "Border Collie"
+    aliases_ru: ["бордер-колли"]
+    aliases_en: ["border collie"]
+    source: web
+    search_queries:
+      - "Border Collie dog breed photo"
+      - "Border Collie portrait photo"
+      - "Border Collie standing full body"
+
+  - name: "Dachshund"
+    aliases_ru: ["такса", "немецкая такса", "даксхунд"]
+    aliases_en: ["dachshund", "sausage dog", "dackel", "teckel"]
+    source: web
+    search_queries:
+      - "Dachshund dog breed photo"
+      - "Dachshund portrait photo"
+      - "Dachshund standing full body"
+
+  - name: "French Bulldog"
+    aliases_ru: ["французский бульдог", "франц бульдог"]
+    aliases_en: ["french bulldog", "frenchie"]
+    source: web
+    search_queries:
+      - "French Bulldog dog breed photo"
+      - "French Bulldog portrait photo"
+      - "French Bulldog standing full body"
+
+  - name: "Golden Retriever"
+    aliases_ru: ["голден-ретривер", "золотистый ретривер", "голден ретривер"]
+    aliases_en: ["golden retriever"]
+    source: web
+    search_queries:
+      - "Golden Retriever dog breed photo"
+      - "Golden Retriever portrait photo"
+      - "Golden Retriever standing full body"
+
+  - name: "Labrador Retriever"
+    aliases_ru: ["лабрадор-ретривер", "лабрадор", "лабрадор ретривер"]
+    aliases_en: ["labrador retriever", "labrador", "lab"]
+    source: web
+    search_queries:
+      - "Labrador Retriever dog breed photo"
+      - "Labrador Retriever portrait photo"
+      - "Labrador Retriever standing full body"
+
+  - name: "Pembroke Welsh Corgi"
+    aliases_ru: ["вельш-корги пемброк", "корги пемброк", "пемброк", "вельш корги пемброк"]
+    aliases_en: ["pembroke welsh corgi", "pembroke corgi", "welsh corgi pembroke", "pembroke"]
+    source: web
+    search_queries:
+      - "Pembroke Welsh Corgi dog breed photo"
+      - "Pembroke Welsh Corgi portrait"
+      - "Corgi dog standing full body"
+
+  - name: "Siberian Husky"
+    aliases_ru: ["сибирский хаски", "хаски"]
+    aliases_en: ["siberian husky", "husky"]
+    source: web
+    search_queries:
+      - "Siberian Husky dog breed photo"
+      - "Siberian Husky portrait photo"
+      - "Siberian Husky standing full body"
