@@ -70,7 +70,8 @@ class Evaluator:
         }
         try:
             system, user = build_prompts(self.species_cfg, mode, breed_names)
-            resp = self.client.identify(system, user, item["image_path"])
+            resp = self.client.identify(system, user, item["image_path"],
+                                        reasoning=(mode == "reasoning"))
             rec["raw"] = resp["raw"]
             rec["latency_s"] = resp["latency_s"]
             parsed = parse_response(resp["raw"], is_pet_field)

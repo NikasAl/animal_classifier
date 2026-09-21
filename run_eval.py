@@ -6,6 +6,7 @@
 """
 import argparse
 import os
+import re
 import sys
 
 import yaml
@@ -18,8 +19,16 @@ from src.metrics import compute_metrics  # noqa: E402
 from src.normalizer import BreedNormalizer  # noqa: E402
 
 
+def model_tag(model: str) -> str:
+    """Qwen/Qwen3.8-27B-FP8 -> qwen3.8-27b-fp8 (безопасное имя файла)."""
+    tag = model.split("/")[-1].lower()
+    return re.sub(r"[^a-z0-9.\-]+", "-", tag).strip("-")
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--config", default="configs/eval.yaml",
+                    help="yaml-конфиг провайдера (configs/eval.yaml | configs/eval_empero.yaml)")
     ap.add_argument("--species", default=None, help="cat|dog (по умолчанию из eval.yaml)")
     ap.add_argument("--modes", default=None, help="через запятую: closed,open,reasoning")
     ap.add_argument("--manifest", default=None)
@@ -30,7 +39,8 @@ def main():
     ap.add_argument("--no-report", action="store_true")
     args = ap.parse_args()
 
-    with open(os.path.join(ROOT, "configs", "eval.yaml"), encoding="utf-8") as f:
+    cfg_path = args.config if os.path.isabs(args.config) else os.path.join(ROOT, args.config)
+    with open(cfg_path, encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
     run_cfg = cfg["run"]
     species = args.species or run_cfg["species"]
@@ -42,7 +52,8 @@ def main():
         species_cfg = yaml.safe_load(f)
 
     results_path = run_cfg["results_path"].format(
-        species=species, model=cfg["api"]["model"])
+        species=species, model=model_tag(cfg["api"]["model"]))
+    print(f"[run] config={args.config} model={cfg['api']['model']}")
     print(f"[run] species={species} modes={modes} manifest={manifest}")
     print(f"[run] results -> {results_path}")
 

@@ -1,6 +1,6 @@
 __pycache__/
 *.pyc
+# сырой архив Oxford (811MB) не храним — превышает лимит GitHub 100MB/файл;
+# в репозитории лежат уже извлечённые фото: data/oxford/dog, data/web/dog
 data/raw/
-data/web/
-data/oxford/
 .DS_Store

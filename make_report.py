@@ -5,6 +5,7 @@
 """
 import argparse
 import os
+import re
 import sys
 import time
 
@@ -16,8 +17,15 @@ sys.path.insert(0, ROOT)
 from src.report_html import build_report  # noqa: E402
 
 
+def model_tag(model: str) -> str:
+    tag = model.split("/")[-1].lower()
+    return re.sub(r"[^a-z0-9.\-]+", "-", tag).strip("-")
+
+
 def main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--config", default="configs/eval.yaml",
+                    help="yaml-конфиг провайдера")
     ap.add_argument("--species", default="dog")
     ap.add_argument("--results", default=None)
     ap.add_argument("--cnn", default=None, help="JSONL результатов CNN-сервиса")
@@ -25,14 +33,15 @@ def main():
     ap.add_argument("--title", default=None)
     args = ap.parse_args()
 
-    with open(os.path.join(ROOT, "configs", "eval.yaml"), encoding="utf-8") as f:
+    cfg_path = args.config if os.path.isabs(args.config) else os.path.join(ROOT, args.config)
+    with open(cfg_path, encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
     model = cfg["api"]["model"]
     results = args.results or os.path.join(
-        ROOT, cfg["run"]["results_path"].format(species=args.species, model=model))
+        ROOT, cfg["run"]["results_path"].format(species=args.species, model=model_tag(model)))
     out = args.out or os.path.join(
         ROOT, cfg["report"]["out_dir"],
-        f"report_{args.species}_{model}_{time.strftime('%Y%m%d_%H%M')}.html")
+        f"report_{args.species}_{model_tag(model)}_{time.strftime('%Y%m%d_%H%M')}.html")
     cnn = args.cnn
     if cnn and not os.path.isabs(cnn):
         cnn = os.path.join(ROOT, cnn)

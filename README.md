@@ -72,17 +72,28 @@ Content-Type: application/json
 - `results/results_dog_cnn.jsonl` — 300 записей CNN
 - `reports/report_dog_*.html` — итоговый отчёт (открывается офлайн)
 
+## Датасет (хранится в репозитории)
+
+Извлечённые фото закоммичены, чтобы восстановление окружения занимало секунды
+(git clone) вместо ~18 минут (S3 811MB + image-search + загрузки):
+
+- `data/oxford/dog/` — 180 фото, 12 пород Oxford-IIIT Pet × 15 (лицензия датасета допускает исследование)
+- `data/web/dog/` — 120 фото, 8 web-пород × 15 — найдены через image-search, источники
+  в `data/web/dog/_search/*.json`. Использование — исследовательский бенчмарк;
+  права на оригиналы принадлежат их владельцам (при претензии — удалю по запросу).
+- Сырой архив Oxford (811MB) НЕ хранится: лимит GitHub 100MB/файл.
+  С нуля: `scripts/prepare_oxford.py` + `scripts/fetch_web_photos.py` + `scripts/build_manifest.py`.
+
 ## Воспроизведение
 
 ```bash
 pip install requests pillow pyyaml
-python scripts/prepare_oxford.py --species dog --per-breed 15
-python scripts/fetch_web_photos.py --species dog --max-per-breed 15
-python scripts/build_manifest.py --species dog --per-breed 15
-python run_eval.py --species dog          # LLM (resume: обрывы безопасны)
-python scripts/run_cnn.py --species dog   # CNN-сервис
-python make_report.py --species dog --cnn results/results_dog_cnn.jsonl
+git clone https://github.com/NikasAl/animal_classifier.git && cd animal_classifier
+python run_eval.py --species dog --config configs/eval.yaml          # agnes-3.0-flash
+python run_eval.py --species dog --config configs/eval_empero.yaml   # Qwen3.8-27B-FP8 (empero, free)
+python scripts/run_cnn.py --species dog                              # CNN-сервис kreagenium.ru
+python make_report.py --species dog --config configs/eval_empero.yaml --cnn results/results_dog_cnn.jsonl
+python make_compare.py --a results/results_dog_agnes-3.0-flash.jsonl \
+                       --b results/results_dog_qwen3.8-27b-fp8.jsonl \
+                       --cnn results/results_dog_cnn.jsonl           # сравнение моделей
 ```
-
-Фото не хранятся в репозитории (web-фото — чужие копирайты; Oxford — скачайте
-с S3 fast.ai). Готовый пакет с фото: папка download.

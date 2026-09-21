@@ -1,0 +1,39 @@
+# Empero free community endpoint (Qwen3.8-27B-FP8)
+# https://free.empero.org — OpenAI-совместимый, любой api key (используем "free").
+# Контекст 131072, default max_tokens 32768. Железо: 2x RTX PRO 6000 ("please be kind").
+# Rate-limit заголовки: unlimited; жёстких лимитов в документации нет.
+api:
+  base_url: "https://free.empero.org/v1"
+  api_key: "free"
+  model: "Qwen/Qwen3.8-27B-FP8"
+  timeout: 240
+  # Qwen3.8 — hybrid-thinking модель: CoT идёт в <think>...</think> внутри content;
+  # reasoning_param дополнительно разрешает режим рассуждений на уровне API
+  reasoning_param:
+    reasoning:
+      enabled: true
+
+request:
+  temperature: 0.0
+  max_tokens: 3000     # в budgetCompletion входят токены размышлений
+  seed: null           # free-эндпоинт может не принимать seed
+  max_image_side: 1024
+  jpeg_quality: 85
+
+run:
+  species: dog
+  modes: [closed, open, reasoning]
+  concurrency: 4
+  manifest: "manifests/dog_extended.csv"
+  results_path: "results/results_{species}_{model}.jsonl"
+
+report:
+  out_dir: "reports"
+
+cnn:
+  enabled: true
+  base_url: "https://kreagenium.ru/client/dogs/"
+  endpoint: "jsondogfindinjpeg"
+  request_field: "imageJpg"
+  timeout: 60
+  results_path: "results/results_dog_cnn.jsonl"

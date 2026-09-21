@@ -53,6 +53,11 @@ def parse_response(raw_text: str, is_pet_field: str = "is_pet") -> dict:
     out = {"is_pet": None, "guesses": [], "analysis": [], "parse_ok": False}
     if not raw_text:
         return out
+    # thinking-модели (Qwen3 и др.) выдают CoT в <think>...</think> внутри content:
+    # берём всё после последнего закрывающего тега, открывающие теги вычищаем
+    if "</think>" in raw_text:
+        raw_text = raw_text.rsplit("</think>", 1)[-1]
+    raw_text = raw_text.replace("<think>", "")
     text = _strip_fences(raw_text)
 
     # 1) прямой парсинг
