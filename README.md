@@ -4,33 +4,45 @@ Python-фреймворк для тестирования vision-LLM (OpenAI-с�
 на задаче определения породы собаки по фотографии. Поддержка произвольных видов —
 через конфиги `configs/species/*.yaml` (собаки и кошки готовы).
 
-## Результаты расширенного прогона (2026-09-20)
+## Результаты финального прогона (2026-09-21, web-фото обновлены)
 
 **Датасет**: 300 фото, 20 пород собак (12 из Oxford-IIIT Pet + 8 web) × 15 фото.
 **Модель LLM**: agnes-3.0-flash · **CNN**: действующий сервис Dog Breed Auto Identify (~400 классов, протокол восстановлен из APK).
+Полный прогон 900/900 вызовов LLM и 300/300 CNN, ноль ошибок API.
 
 ### Сводная таблица
 
-| Система            | Top-1  | Top-3  | Macro-F1 | Латентность | Примечание                 |
-|--------------------|--------|--------|----------|-------------|----------------------------|
-| **CNN сервис**     | **95.7%** | 97.3%  | **96.7%** | 4.7s        | 300 фото, ноль ошибок API  |
-| LLM reasoning      | 87.0%  | **98.3%** | 87.1%  | ~19s        | CoT: признаки перед ответом|
-| LLM closed         | 85.7%  | 97.0%  | 85.4%    | ~4s         | список из 20 кандидатов    |
-| LLM open           | 60.0%  | 63.0%  | 67.4%    | ~7s         | свободный ответ, 26% отказов|
+| Система            | Top-1  | Top-3  | Macro-F1 | Примечание                 |
+|--------------------|--------|--------|----------|----------------------------|
+| **CNN сервис**     | **95.0%** | 96.0%  | **96.5%** | 300 фото, латентность ~4.3s |
+| LLM reasoning      | 86.3%  | **97.0%** | 86.3%  | CoT: признаки перед ответом |
+| LLM closed         | 84.7%  | 96.0%  | 84.4%    | список из 20 кандидатов    |
+| LLM open           | 61.0%  | 64.3%  | 67.3%    | свободный ответ            |
 
 ### Ключевые выводы
 
-1. **CNN-сервис сильнее LLM на этой задаче**: 95.7% vs 85.7% top-1 при том,
+1. **CNN-сервис сильнее LLM на этой задаче**: 95.0% vs 86.3% top-1 при том,
    что CNN не получает списка кандидатов (400 классов против 20 у LLM).
-2. **Но системы ошибаются на РАЗНЫХ фото** (совпадение топ-1 ответов — 83%):
-   CNN прав в 40 из 43 случаев ошибок LLM, LLM (reasoning) прав в 11 из 13 ошибок CNN.
-3. **Ансамбль CNN+LLM**: 99.0% top-1 (closed), **99.3%** (reasoning) — ошибок всего 2 из 300.
-4. Слабые места CNN: Havanese (4 из 13 ошибок — порода отсутствует/нераспознаваема),
-   American Bulldog→Boxer, Shiba Inu→Akita.
-5. Слабые места LLM: Bassett↔Beagle, Akita↔Shiba, тонкие различия ретриверов.
-6. Reasoning-режим (CoT) стабильно добавляет +1.3 п.п. к top-1 и +1.3 п.п. к top-3
-   ценой 6× латентности.
-7. «Заученности» Oxford нет ни у CNN (95.0% oxford vs 96.7% web), ни у LLM (84.4% vs 87.5%).
+2. **Но системы ошибаются на РАЗНЫХ фото**: CNN добавляет 42 исправления
+   к closed-режиму LLM (36 к reasoning), LLM исправляет CNN лишь на 11 фото (10).
+3. **Ансамбль CNN+LLM**: **98.7%** top-1 (closed), 98.3% (reasoning) —
+   ошибки только на 4 из 300 фото.
+4. Слабые места LLM: Bassett↔Beagle, Akita↔Shiba, тонкие различия ретриверов.
+5. Reasoning-режим (CoT) добавляет +1.6 п.п. к top-1 ценой возросшей латентности.
+6. Подробности: `reports/report_dog_agnes-3.0-flash_*.html` (автономный отчёт
+   с галереями ошибок и путаницами).
+
+### Эксперименты с провайдерами (2026-09-21)
+
+| Провайдер | Модель | Статус |
+|-----------|--------|--------|
+| apihub.agnes-ai.com | agnes-3.0-flash | рабочий, полный прогон завершён |
+| free.empero.org | Qwen/Qwen3.8-27B-FP8 | 503 maintenance: «ждём новой ёмкости»; конфиг `configs/eval_empero.yaml` готов |
+| inference.dahl.global | zai-org/GLM-5.3-Flash | **vision недоступен**: шлюз отклоняет все image-блоки
+  (`unsupported value "image_url"`), в документации прямо сказано
+  «Vision is not offered on current models». Квота 100M токенов, лимит —
+  конкурентный (429 `model_concurrency`, платные приоритетнее). Конфиг
+  `configs/eval_dahl.yaml` сохранён — пригодится, если vision появится |
 
 ### Сравнение с пилотом на кошках (n=100, тот же протокол)
 
@@ -91,6 +103,7 @@ pip install requests pillow pyyaml
 git clone https://github.com/NikasAl/animal_classifier.git && cd animal_classifier
 python run_eval.py --species dog --config configs/eval.yaml          # agnes-3.0-flash
 python run_eval.py --species dog --config configs/eval_empero.yaml   # Qwen3.8-27B-FP8 (empero, free)
+# NB: configs/eval_dahl.yaml (GLM-5.3-Flash) — пока только text, без vision
 python scripts/run_cnn.py --species dog                              # CNN-сервис kreagenium.ru
 python make_report.py --species dog --config configs/eval_empero.yaml --cnn results/results_dog_cnn.jsonl
 python make_compare.py --a results/results_dog_agnes-3.0-flash.jsonl \
