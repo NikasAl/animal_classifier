@@ -16,6 +16,7 @@ import statistics
 import sys
 import time
 
+import yaml
 from PIL import Image
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__)))
