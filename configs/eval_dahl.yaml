@@ -1,0 +1,39 @@
+# Dahl inference endpoint (GLM-5.3-Flash)
+# https://inference.dahl.global/v1 — OpenAI-совместимый, ключ от пользователя.
+# GLM-5.3-Flash: vision + hybrid-thinking (reasoning enabled на уровне API).
+# Мелкая деталь: reasoning-токены входят в completion budget -> max_tokens 3000.
+api:
+  base_url: "https://inference.dahl.global/v1"
+  api_key: "dahl_2AfrLpMZ4rbKYznGCZPVg5rkwjAHEhsUK"
+  model: "zai-org/GLM-5.3-Flash"
+  timeout: 240
+  # GLM-5.3: режим рассуждений включается полем reasoning; CoT может идти
+  # как в reasoning_content, так и в <think>...</think> внутри content
+  reasoning_param:
+    reasoning:
+      enabled: true
+
+request:
+  temperature: 0.0
+  max_tokens: 3000
+  seed: null          # провайдер может не принимать seed — не отправляем
+  max_image_side: 1024
+  jpeg_quality: 85
+
+run:
+  species: dog
+  modes: [closed, open, reasoning]
+  concurrency: 4
+  manifest: "manifests/dog_extended.csv"
+  results_path: "results/results_{species}_{model}.jsonl"
+
+report:
+  out_dir: "reports"
+
+cnn:
+  enabled: true
+  base_url: "https://kreagenium.ru/client/dogs/"
+  endpoint: "jsondogfindinjpeg"
+  request_field: "imageJpg"
+  timeout: 60
+  results_path: "results/results_dog_cnn.jsonl"

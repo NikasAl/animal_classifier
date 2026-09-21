@@ -80,7 +80,8 @@ class VisionLLMClient:
         url = f"{self.base_url}/chat/completions"
         backoff = 2.0
         last_err = None
-        for attempt in range(4):
+        force_wait = None  # Retry-After с 429 (напр. dahl "model_concurrency")
+        for attempt in range(7):
             t0 = time.time()
             try:
                 r = self.session.post(url, json=payload, timeout=self.timeout)
@@ -90,6 +91,12 @@ class VisionLLMClient:
                     return text, time.time() - t0
                 if r.status_code in RETRYABLE_STATUS:
                     last_err = f"HTTP {r.status_code}: {r.text[:200]}"
+                    if r.status_code == 429:
+                        # уважаем Retry-After провайдера (кап 45с)
+                        try:
+                            force_wait = min(float(r.headers.get("Retry-After") or 0), 45.0) or None
+                        except ValueError:
+                            force_wait = None
                 elif r.status_code == 400 and "seed" in (r.text or "") and "seed" in payload:
                     # провайдер не принимает seed — убираем и повторяем
                     payload.pop("seed", None)
@@ -100,8 +107,11 @@ class VisionLLMClient:
             except (requests.Timeout, requests.ConnectionError) as e:
                 last_err = f"{type(e).__name__}: {e}"
             wait = backoff + random.uniform(0, 1.0)
+            if force_wait:
+                wait = max(wait, force_wait)
             time.sleep(wait)
             backoff = min(backoff * 2, 20.0)
+            force_wait = None
         raise RuntimeError(f"API failed after retries: {last_err}")
 
     def identify(self, system: str, user: str, image_path: str,
